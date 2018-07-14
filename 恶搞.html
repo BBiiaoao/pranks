@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>叫爸爸</title>
+    <style>
+        div{
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            background-color: lightsteelblue;
+            left: 50%;
+            top:10px;
+            margin-left: -300px;
+        }
+        p{
+            font-size: 50px;
+            text-align: center;
+
+        }
+        #aa{
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #hide{
+            font-size: 15px;
+            display: none;
+        }
+        a{
+            text-align: center;
+            margin-top: 400px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>狗儿子真棒</p>
+    <p id="aa">想解决这个问题么？</p>
+    <p id="hide">去你桌面文件夹那里点击“浏览器”，把里面的浏览器放到桌面，把原先的删除就好了</p>
+    <script>
+        window.onload=function () {
+            var i = true;
+            while (i) {
+                if (confirm('你是傻子吗')) {
+                    if (confirm('你是我的狗儿子吗？')) {
+                        if (confirm('很有觉悟，你爸爸我帅么？')) {
+                            if (confirm('fine，听说你要请我吃一个月夜宵？')) {
+                                if (confirm('这就对了，年轻人不要冲动，知道了么')) {
+                                    if (confirm('……emmm，突然没话说了，你就点个确定就好了')) {
+                                        if (prompt('要不这样吧，叫一声帅哥，就ojbk了', '') == '帅哥') {
+                                            if (prompt('哇，真棒，要不再来一次吧', '') == '帅哥') {
+                                                i = false;
+                                            }
+                                            else {
+                                                alert('啧啧啧，再见');
+                                            }
+                                        } else {
+                                            alert('啧啧啧，再见');
+                                        }
+                                    } else {
+                                        alert('啧啧啧，再见');
+                                    }
+                                } else {
+                                    alert('啧啧啧，再见');
+                                }
+                            } else {
+                                alert('啧啧啧，再见');
+                            }
+                        } else {
+                            alert('啧啧啧，再见');
+                        }
+                    } else {
+                        alert('啧啧啧，再见');
+                    }
+                }
+                else {
+                    confirm('你是傻子吗');
+                }
+            }
+        }
+        document.getElementById('aa').onclick=function () {
+            document.getElementById('hide').style.display='block';
+        }
+    </script>
+</div>
+</body>
+</html>
